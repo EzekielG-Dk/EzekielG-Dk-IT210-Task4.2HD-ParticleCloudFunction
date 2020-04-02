@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+  <body>
+  <center>
+  <br>
+  <br>
+  <br>
+  <form action="https://api.particle.io/v1/devices/e00fce684ddca9d503a2508e/lights?access_token=64c1dd00054a600d2c2498e62a7145a158bcc2a6" method="POST">
+    Tell your device what to do!<br>
+    <br>
+    <input type="radio" name="arg" value="red">Turn the red LED on.
+    <br>
+    <input type="radio" name="arg" value="green">Turn the green LED on.
+    <br>
+    <input type="radio" name="arg" value="blue">Turn the blue LED on.
+    <br>
+    <br>
+    <input type="submit" value="Do it!">
+  </form>
+  </center>
+  </body>
+</html>
