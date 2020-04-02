@@ -1,0 +1,52 @@
+int red = D3;
+int green = D4;
+int blue = D5;
+
+int lightChoose(String colour);
+
+void setup() {
+    pinMode(red, OUTPUT);
+    pinMode(green, OUTPUT);
+    pinMode(blue, OUTPUT);
+    
+    Particle.function("lights", lightChoose);
+}
+
+void loop() {
+
+}
+
+int lightChoose(String colour)
+{
+    if(colour == "red")
+    {
+    	digitalWrite(red, HIGH);     
+    	delay(500);
+    
+    	digitalWrite(red, LOW);
+    	delay(500);
+    	return 1;
+    }
+    else if(colour == "green")
+    {
+    	digitalWrite(green, HIGH);     
+    	delay(500);
+    
+    	digitalWrite(green, LOW);
+    	delay(500);
+    	return 1;
+    }
+    else if(colour == "blue")
+    {
+    	digitalWrite(blue, HIGH);     
+    	delay(500);
+    
+    	digitalWrite(blue, LOW);
+    	delay(500);
+    	return 1;
+    }
+    else
+    {
+        return -1;
+    }
+}
